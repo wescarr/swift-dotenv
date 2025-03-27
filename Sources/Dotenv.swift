@@ -125,7 +125,7 @@ public enum Dotenv {
                 continue
             }
             // split by the delimeter
-            let substrings = line.split(separator: Self.delimeter)
+            let substrings = line.split(separator: Self.delimeter, maxSplits: 1)
 
             // make sure we can grab two and only two string values
             guard
